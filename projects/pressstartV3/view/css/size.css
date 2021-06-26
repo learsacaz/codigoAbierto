@@ -1,0 +1,32 @@
+.designpro{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 200px;
+    height: 130px;
+    text-align: center;
+    margin:10px;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 3px 5px 25px rgba(0,0,0,0.8);
+}
+.designpro:hover{
+    width: 300px;
+    height: 200px;
+}
+.drawnpro{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100px;
+    height: 150px;
+    text-align: center;
+    margin:10px;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 3px 5px 25px rgba(0,0,0,0.8);
+}
+.drawnpro:hover{
+    width: 170px;
+    height: 250px;
+}

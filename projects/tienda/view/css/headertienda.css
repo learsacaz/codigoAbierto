@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Monserrat&family=Karla&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+/*----------------------------
+            header
+----------------------------*/
+.header{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow:column;
+    background-color: #FDEDEC;
+    align-items:center;
+    justify-content:space-around;
+}
+.icon-menu{
+    display: none;
+}
+.arribaheader{
+    display: flex;
+    flex-flow:row;
+    justify-content:space-between;
+    width: 100%;
+}
+.redes{
+    display: flex;
+    flex-flow:row;
+    align-items:center;
+    flex-grow:1;
+    justify-content:center; 
+}
+.redes a{
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    color: #FDABA6;
+}
+.red1, .red2, .red3{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    font-size: 40px;   
+}
+.logo{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    flex-grow:1.5;
+    align-items:center;
+    justify-content:center; 
+}
+.logo a{
+    display: flex;
+    align-items:center;
+    justify-content:center; 
+}
+.logo img{
+    width: 300px;
+    height: 300px;
+}
+.buscadorhead{
+    display: flex;
+    flex-grow:1;
+    align-items:flex-end;
+    justify-content:center; 
+}
+.buscador{
+    width: 80%;
+    height: 40px;
+    background-color: #FDEDEC;
+    text-align: center;
+    border-bottom: 1px gray solid;
+}
+.buscador:focus{
+    border-radius: 50px;
+    border: 0;
+    outline: 3px solid #fdaba6;
+}
+.btn-buscar{
+    width: 40px;
+    height: 40px;
+    background-color: #fdaba6;
+    cursor: pointer;
+}
+.fa-search{
+    font-size: 20px;
+    color: white;
+}
+.menu{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:center;
+}
+.menu ul li{
+    list-style: none;
+    width: 100%;
+    justify-content:center;    
+    text-align: center;
+    color: #774c28;
+    line-height: 60px;
+    transition:.5s;
+    font-family: "Montserrat", sans-serif;
+}
+.menu a{
+    text-decoration: none;
+    width: 100%;
+}
+.menu ul{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    box-shadow: 0px 10px 10px #fdaba6;
+}
+.menu li:hover{
+    box-shadow: 0px 0px 50px #fdaba6;
+}
+.seleccionado{
+    background-color: #fdaba6;
+}
+/*----------------------------
+        pantalla 930
+----------------------------*/
+@media(max-width:930px){
+    /*----------------------------
+                header
+    ----------------------------*/
+    .icon-menu{
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 40px;
+        color: #fdaba6;
+        cursor: pointer;
+    }
+    .header{
+        height: 500px;
+    }
+    .arribaheader{
+        flex-flow:column;
+        justify-content:space-around;
+        align-items:center;
+        height: 100%;
+    }
+    .redes{
+        order:2;
+        align-items:center;
+        width: 50%;
+        justify-content:space-around;
+    }
+    .logo{
+        order:1;
+        width: 100%;
+    }
+    .buscadorhead{
+        order:3;
+        width: 80%;
+        justify-content:center;
+        align-items:center;
+    }
+    .menu{
+        display: flex;
+        flex-flow:column;
+        width: 200px;
+        height: 240px;
+        position: fixed;
+        justify-content:center;
+        align-items:center;
+        box-shadow: 0px 0px 10px #fdaba6;
+    }
+    .menu ul{
+        display: flex;
+        flex-flow:column;
+    }
+    .menu ul li{
+        background-color: #fdaba6;
+        width: 200px;
+    }
+    #nav{
+        transform:scale(0);
+        transition: all 1s;
+    }
+    #nav.mostrar{
+        transform:scale(1);
+        transition: all 1s;
+    }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Acme&family=Karla&family=Pacifico&display=swap');
+
+/*     Regresar     */
+.turnback a{
+    margin: 0;
+    padding: 0px;
+    border: 0;
+    display: flex;
+    flex-flow:row;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #C5C5C5;
+    font-size: 30px;
+    text-decoration: none; 
+    font-family: 'Acme', sans-serif;
+    text-shadow: 3px 3px 4px black;
+}
+.turnback{
+    width: 100%;
+    height: 45px;
+    position:fixed;
+    display: flex;
+    z-index: 2;
+    background: rgb(160,160,160);
+    background: -moz-linear-gradient(top,  rgba(160,160,160,1) 0%, rgba(237,237,237,1) 7%, rgba(226,226,226,1) 50%, rgba(255,255,255,1) 93%, rgba(160,160,160,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(160,160,160,1) 0%,rgba(237,237,237,1) 7%,rgba(226,226,226,1) 50%,rgba(255,255,255,1) 93%,rgba(160,160,160,1) 100%);
+    background: linear-gradient(to bottom,  rgba(160,160,160,1) 0%,rgba(237,237,237,1) 7%,rgba(226,226,226,1) 50%,rgba(255,255,255,1) 93%,rgba(160,160,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', endColorstr='#a0a0a0',GradientType=0 );
+}

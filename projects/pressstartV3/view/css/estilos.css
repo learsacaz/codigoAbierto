@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Karla&family=Pacifico&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.contenedor{
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+    background: #111111;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background: rgba(0,0,0,0);
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(153,153,153);
+    background: -moz-linear-gradient(top,  rgba(153,153,153,1) 1%, rgba(237,237,237,1) 25%, rgba(237,237,237,1) 75%, rgba(153,153,153,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(153,153,153,1) 1%,rgba(237,237,237,1) 25%,rgba(237,237,237,1) 75%,rgba(153,153,153,1) 100%);
+    background: linear-gradient(to bottom,  rgba(153,153,153,1) 1%,rgba(237,237,237,1) 25%,rgba(237,237,237,1) 75%,rgba(153,153,153,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#999999',GradientType=0 );
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track{
+    background: #111111;
+}
+
+h1{
+    text-shadow: 5px 3px 10px rgba(10,100,100,1);
+    font-family: 'Pacifico', sans-serif;
+    font-size: 50px;
+    padding: 30px;
+}
+
+/*----------------------------
+            cuerpo
+----------------------------*/
+.cuerpo{
+    margin-top: 30px;
+    background-color: #111111;
+    border: 0;
+    padding-top: 30px;
+    font-family: 'karla', sans-serif;
+    color: #F1F1F1;
+    display: inline-block table;
+}
+.drawings{
+    text-shadow: 5px 3px 10px rgba(10,100,100,1);
+    font-family: 'Pacifico', sans-serif;
+    font-size: 50px;
+    padding: 30px;
+}
+.apartado1, 
+.apartado2, 
+.apartado3, 
+.apartado4{
+    display: flex;
+    margin-bottom: 20px;
+}
+.apartado1, 
+.apartado3{
+    color: #111111;
+}
+.apartado2, 
+.apartado4{
+    color: #F1F1F1;
+    z-index: -1;
+}
+.apartado1text, 
+.apartado2text, 
+.apartado3text, 
+.apartado4text{
+    width: 60%;
+    font-size: 160%;
+    text-align: center;
+    padding: 50px;
+    border-color: white;
+    border: 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.apartado1text, 
+.apartado3text{
+    background-color: #F1F1F1;
+}
+.apartado2text, 
+.apartado4text{
+    background-color: #111111;
+}
+.apartado1img, 
+.apartado2img, 
+.apartado3img, 
+.apartado4img{
+    width: 40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.imgexpo{
+    width: 100%;
+    background-size: cover;
+    
+}
+/*----------------------------
+            footer
+----------------------------*/
+.footer, .foot, .down{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+.foot{
+    height: 230px;
+    margin-top: 20px;
+    background-color: #111111;
+}
+/*----------------------------
+            autor
+----------------------------*/
+.down{
+    height: 15px;
+    background-color: #020203;
+    color: #6D6C6C;
+    font-size: 10px;
+    font-family: 'karla', sans-serif;
+    overflow-x: auto; 
+}
+@media(max-width:930px){
+    /*----------------------------
+                cuerpo
+    ----------------------------*/
+    .cuerpo{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .apartado1, .apartado2, .apartado3, .apartado4{
+        display: block;
+    }
+    .apartado2, .apartado4{
+        transform: rotatex(180deg);
+        z-index: 2;
+    }
+    .apartado2text, .apartado2img, .apartado4text, .apartado4img{
+        transform: rotatex(180deg);
+    }
+    .apartado1text, .apartado2text, .apartado3text, .apartado4text{
+        width: 100%;
+        font-size: 200%;
+        padding: 30px;
+    }
+    .apartado1img, .apartado2img, .apartado3img, .apartado4img{
+        width: 100%;
+    }
+    
+}

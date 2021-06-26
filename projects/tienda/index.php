@@ -1,0 +1,29 @@
+<?php 
+require_once("libraries/helpers/helpers.php");
+include('libraries/src/PHPMailer.php');
+include('libraries/src/SMTP.php');
+include('libraries/src/Exception.php');
+
+
+$url = !empty($_GET['url']) ? $_GET['url'] : 'controller/home';
+$arrUrl = explode("/", $url);
+$controller = $arrUrl[0];
+$method	= $arrUrl[0];
+$params = "";
+if(!empty($arrUrl[1])){
+	if ($arrUrl[1] != "") {
+		$method = $arrUrl[1];
+	}
+}
+if(!empty($arrUrl[2])){
+	if ($arrUrl[2] != "") {
+		for ($i=2; $i < count($arrUrl); $i++) { 
+			$params .= $arrUrl[$i].',';
+		}
+		$params = trim($params, ',');
+	}
+}
+
+require_once("libraries/Core/Autoload.php");
+require_once("libraries/Core/load.php");
+

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Karla&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+/*----------------------------
+            header
+----------------------------*/
+.icon-menu{
+    display: none;
+}
+header{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+    background-color: #F1F1F1;
+    position: fixed;
+    z-index: 999;
+}
+.logo{
+    width: 150px;
+    height: 60px;
+}
+#nav{
+    top:0;
+    right: 0;
+    width: 400px;
+    height: 60px;
+    display: inline-block table;
+    position: absolute;
+}
+#nav a{
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+}
+li{
+    padding: 0;
+    border: 0;
+    display: table-cell;
+    list-style: none;
+    width: 100px;
+    height: 60px;
+    text-align:center;
+    vertical-align: middle;
+    color: rgba(48,48,48);
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+.select{
+    background-color: #111111;
+    color: #F1F1F1;
+}
+.linka{
+    transition: all .9s ease;
+}
+.linka:hover{
+    background-color: #111111;
+    color: #F1F1F1;
+}
+/*----------------------------
+        pantalla 930
+----------------------------*/
+@media(max-width:930px){
+    /*----------------------------
+                header
+    ----------------------------*/
+    .icon-menu{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 40px;
+        color: #111111;
+        cursor: pointer;
+    }
+    #nav{
+        top: 60px;
+        left: -1000px;
+        width: 100%;
+        transition: all 1s;
+    }
+    #nav a{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        width: 100%;
+        display: block;
+        position: relative;
+        border-radius: 0;
+        background-color: #F1F1F1;
+    }
+    .menu{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+    }
+    li{
+        max-width: 100%;
+        width: 400px;
+        height: 55px;
+    }
+    #nav.mostrar{
+        border-radius: 0px;
+        left: 0;
+        transition: all 1s;
+    }
+}

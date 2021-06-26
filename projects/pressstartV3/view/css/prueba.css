@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.bloque{
+    height: 50%;
+    margin: 0;
+}
+#caja{
+    width:100px; 
+    height:100px; 
+    background-color:red;
+}
+#caja.show{
+    width:100px; 
+    height:100px; 
+    background-color:black;
+}
+.icon-menu{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    color: #111111;
+    cursor: pointer;
+}
